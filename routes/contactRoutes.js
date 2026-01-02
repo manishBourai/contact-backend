@@ -4,9 +4,9 @@ import { protect } from "../middleware/isLogin.js";
 
 const router = express.Router();
 
-router.post("/",protect, createContact);
-router.get("/",protect, getContacts);
-router.delete("/:id",protect,deleteContact)
-router.put("/:id",protect,updateContact)
+router.post("/", createContact);
+router.get("/", getContacts);
+router.delete("/:id",deleteContact)
+router.put("/:id",updateContact)
 
 export default router;
